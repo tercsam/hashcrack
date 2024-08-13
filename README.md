@@ -66,3 +66,5 @@ Security: Use this script responsibly and only on systems or hashes that you hav
 Disclaimer
 
 This script is intended for educational purposes only. The misuse of this tool is illegal and unethical. Always ensure you have permission before attempting to crack passwords. The authors are not responsible for any misuse or damage caused by this script.
+
+AUTHOR : MASCRET Clement
