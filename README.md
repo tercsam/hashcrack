@@ -1,68 +1,73 @@
-README
+Hash Cracker App
 
-Introduction
+Overview
 
-This Python script is designed to perform password-cracking operations using either a dictionary attack or a brute-force attack. The script supports various hashing algorithms (like md5, sha1, sha256, etc.) and can be customized according to the user's needs. It is intended for educational purposes and to demonstrate the vulnerability of weak passwords.
+Hash Cracker App is a graphical user interface (GUI) application built with Kivy, designed to crack hashed passwords using two primary methods: Dictionary Attack and Brute Force Attack. The app automatically detects the hash type (MD5, SHA1, SHA256, or SHA512) based on the length of the input hash.
+
+Features
+
+Hash Detection: Automatically detects the type of hash based on its length.
+Dictionary Attack: Uses a predefined wordlist to match the hash against possible passwords.
+Brute Force Attack: Attempts to crack the hash by trying all possible combinations of characters up to a specified length.
+Multithreading: The brute force attack is optimized using multithreading to speed up the cracking process.
+Cross-Platform: Built with Kivy, making it compatible with Windows, macOS, Linux, and Android.
+
+Screenshots
+(I will dd screenshots of the application in action here)
+
+Installation
 
 Prerequisites
-
 Python 3.x
-A basic understanding of hashing and password security.
-A dictionary file (for dictionary attacks).
-Setup
+pip (Python package installer)
+Kivy library
+Install Dependencies
+Clone the Repository
+bash
+Copier le code
+git clone https://github.com/yourusername/hash-cracker-app.git
+cd hash-cracker-app
+Install Kivy and Other Dependencies
+bash
+Copier le code
+pip3 install kivy
+Running the Application
+To run the application locally:
 
-Python Installation: Ensure you have Python 3.x installed on your machine.
-Dictionary File: If you plan to use the dictionary attack, prepare a dictionary file containing a list of possible passwords, one per line.
-How to Use
+bash
+Copier le code
+python3 hash_cracker.py
+Usage
 
-Run the Script:
-Open a terminal or command prompt.
-Navigate to the directory where the script is located.
-Run the script using the command: python script_name.py.
-Choose Your Attack Method:
-Dictionary Attack:
-When prompted, enter the hash to crack.
-Specify the type of hash (e.g., md5, sha1, etc.).
-Select "dictionnaire" as the attack method.
-Provide the path to the dictionary file.
-Brute Force Attack:
-When prompted, enter the hash to crack.
-Specify the type of hash (e.g., md5, sha1, etc.).
-Select "brute force" as the attack method.
-Provide the maximum password length to try.
-Interpreting the Results:
-If the password is found, the script will display it.
-If the password is not found, the script will inform you that the attack was unsuccessful.
-Functions Overview
-
-hash_password(password, hash_type='md5'):
-Hashes the input password using the specified hashing algorithm and returns the hexadecimal digest.
-dictionary_attack(hash_to_crack, hash_type, dictionary_file):
-Attempts to crack the hash by comparing it against hashes of passwords in a provided dictionary file.
-brute_force_attack(hash_to_crack, hash_type, max_length=4):
-Attempts to crack the hash by trying all possible combinations of characters up to the specified length.
-main():
-Handles user input and initiates the selected attack method.
-Example Usage
-
+Enter the Hash: Input the hash you want to crack in the provided text field.
+Select Attack Type:
+Dictionary Attack: Choose this option to crack the hash using a wordlist.
+Brute Force Attack: Choose this option to try all possible character combinations up to a specified length.
+Start the Attack: Click the "Start Attack" button and view the results in the output section.
 Dictionary Attack
-bash
-Copier le code
-Entrez le hash à cracker : 5d41402abc4b2a76b9719d911017c592
-Entrez le type de hash (md5, sha1, sha256, etc.) : md5
-Choisissez l'attaque : 'dictionnaire' ou 'brute force' : dictionnaire
-Entrez le chemin vers le fichier dictionnaire : /path/to/dictionary.txt
+Select the dictionary attack option.
+Choose a dictionary file (wordlist) using the file chooser.
+The app will attempt to find the password matching the given hash from the wordlist.
 Brute Force Attack
-bash
-Copier le code
-Entrez le hash à cracker : 5d41402abc4b2a76b9719d911017c592
-Entrez le type de hash (md5, sha1, sha256, etc.) : md5
-Choisissez l'attaque : 'dictionnaire' ou 'brute force' : brute force
-Entrez la longueur maximale du mot de passe : 4
-Notes
+Select the brute force attack option.
+Specify the maximum length of the password.
+The app will try all possible combinations of characters up to the specified length.
+Building for Android
 
-Performance: Brute-force attacks can be very slow, especially for longer passwords. The script is more of a proof-of-concept and not optimized for large-scale or time-sensitive operations.
-Security: Use this script responsibly and only on systems or hashes that you have explicit permission to test.
-Disclaimer
 
-This script is intended for educational purposes only. The misuse of this tool is illegal and unethical. Always ensure you have permission before attempting to crack passwords. The authors are not responsible for any misuse or damage caused by this script.
+Contributing
+
+Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Acknowledgements
+
+Kivy: For providing the framework to build cross-platform applications.
+Python: For its simplicity and power in building such applications.
+Community: For providing numerous resources and support.
+Contact
+
+For any inquiries, please reach out to mascret.clement@gmail.com.
