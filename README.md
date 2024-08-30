@@ -16,6 +16,8 @@ Screenshots
 (I will dd screenshots of the application in action here)
 
 Installation
+a APK, APP and EXE extension will be available soon
+
 
 Prerequisites
 Python 3.x
