@@ -6,13 +6,21 @@ Hash Cracker App is a simple, cross-platform tool for cracking hashed passwords 
 Key Features
 
 Auto Hash Detection: Automatically identifies the hash type.
+
 Dictionary Attack: Uses a wordlist to find the password.
+
 Brute Force Attack: Tries all possible character combinations up to a specified length.
+
 Multithreading: Faster cracking with optimized multithreading.
+
 Cross-Platform: Works on Windows, macOS, Linux, and Android.
+
+
 Screenshots (Screenshots of the app in action will be added here)
 
+
 Installation
+
 
 APK, APP, and EXE files will be available soon.
 Prerequisites
