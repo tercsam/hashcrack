@@ -1,7 +1,7 @@
 Hash Cracker App
 Overview
 
-Hash Cracker App is a simple, cross-platform tool for cracking hashed passwords using Dictionary and Brute Force attacks. The app automatically detects the hash type (MD5, SHA1, SHA256, or SHA512) based on the hash length.
+Hash Cracker App is a simple, cross-platform tool for cracking hashed passwords using Dictionary and Brute Force attacks. The app automatically detects the hash type (MD5, SHA1, SHA256, or SHA512) based on the hash features.
 
 Key Features
 
